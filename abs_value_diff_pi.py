@@ -6,7 +6,21 @@ def main():
     for elem in nums:
         diff = elem - pi
         diff_pi.append(diff)
-    print(diff_pi)
+    print(diff_pi)  
+
+    tuples_diff_pi = []
+    for diff in diff_pi:
+        value = abs(diff)
+        tuple = value, diff
+        tuples_diff_pi.append(tuple)
+    print(tuples_diff_pi)
+    tuples_diff_pi.sort()
+
+    print(tuples_diff_pi)
+
+    sorted_diff_pi = [t[1] for t in tuples_diff_pi]
+    print(sorted_diff_pi)
+
     
 
     # # 1. Create a list of tuples where each tuple contains the absolute value and the original value.
