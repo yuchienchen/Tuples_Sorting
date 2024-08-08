@@ -5,9 +5,9 @@ def main():
     # 2. Sort the list of tuples based on the first element (uppercase)
     tuples_lst = []
     for elem in lst:
-        upper_case = elem.upper()
-        # print(upper_case)
-        tuples = upper_case, elem
+        lower_case = elem.lower()
+        # print(lower_case)
+        tuples = lower_case, elem
         print(tuples)
         tuples_lst.append(tuples)
     print(tuples_lst)
