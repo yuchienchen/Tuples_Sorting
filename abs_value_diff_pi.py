@@ -8,10 +8,12 @@ def main():
         diff_pi.append(diff)
     print(diff_pi)  
 
+    # elem = diff + pi -> tuple = value, elem
     tuples_diff_pi = []
     for diff in diff_pi:
         value = abs(diff)
-        tuple = value, (diff + pi)
+        # int to round up
+        tuple = value, int(diff + pi)
         tuples_diff_pi.append(tuple)
     print(tuples_diff_pi)
     tuples_diff_pi.sort()
