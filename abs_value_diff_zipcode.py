@@ -7,26 +7,29 @@ def main():
     print(sorted_addresses)
 
 def get_diff_zipcode(address):
-    diff_zipcode = []
-    for address in addresses:
-        diff = int(address[3]) - int(STANFORD_ZIPCODE)
-        # print(diff)
-        diff_zipcode.append(diff)
-    # print(diff_zipcode)
+    return abs(int(address[3]) - int(STANFORD_ZIPCODE))
+ 
 
-    tuples_diff_zipcode = []
-    for diff in diff_zipcode:
-        value = abs(diff)
-        tuple = value, (diff + int(STANFORD_ZIPCODE))
-        tuples_diff_zipcode.append(tuple)
-    # print(tuples_diff_zipcode)
-        tuples_diff_zipcode.sort()
+    # diff_zipcode = []
+    # for address in addresses:
+    #     diff = int(address[3]) - int(STANFORD_ZIPCODE)
+    #     # print(diff)
+    #     diff_zipcode.append(diff)
+    # # print(diff_zipcode)
 
-    # print(tuples_diff_zipcode)
+    # tuples_diff_zipcode = []
+    # for diff in diff_zipcode:
+    #     value = abs(diff)
+    #     tuple = value, (diff + int(STANFORD_ZIPCODE))
+    #     tuples_diff_zipcode.append(tuple)
+    # # print(tuples_diff_zipcode)
+    #     tuples_diff_zipcode.sort()
 
-    sorted_diff_zipcode = [str(t[1]) for t in tuples_diff_zipcode]
+    # # print(tuples_diff_zipcode)
 
-    return sorted_diff_zipcode
+    # sorted_diff_zipcode = [str(t[1]) for t in tuples_diff_zipcode]
+
+    # return sorted_diff_zipcode
 
     
 
