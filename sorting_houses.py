@@ -7,11 +7,17 @@ def main():
     rev_sorted_price = sorted(houses, key=get_price, reverse=True)
     print(rev_sorted_price)
 
+    sorted_price_per_room = sorted(houses, key=get_price_per_room)
+    print(sorted_price_per_room)
+
 def get_count(house):
     return house[1]
 
 def get_price(house):
     return house[2]
+
+def get_price_per_room(house):
+    return house[2] / house[1]
 
 
 
