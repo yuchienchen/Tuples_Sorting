@@ -24,7 +24,7 @@ def get_diff_zipcode(address):
 
     # print(tuples_diff_zipcode)
 
-    sorted_diff_zipcode = [t[1] for t in tuples_diff_zipcode]
+    sorted_diff_zipcode = [str(t[1]) for t in tuples_diff_zipcode]
 
     return sorted_diff_zipcode
 
