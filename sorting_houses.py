@@ -4,11 +4,14 @@ def main():
     sorted_count = sorted(houses, key=get_count)
     print(sorted_count)
     
-    # rev_sorted_info = sorted(info, key=get_year, reverse=True)
-    # print(rev_sorted_info)
+    rev_sorted_price = sorted(houses, key=get_price, reverse=True)
+    print(rev_sorted_price)
 
 def get_count(house):
     return house[1]
+
+def get_price(house):
+    return house[2]
 
 
 
