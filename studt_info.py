@@ -5,7 +5,10 @@ def main():
         for line in file: 
             line = line.strip() 
             print(line)
-            info.append(line)
+            if line.isnumeric():
+                info.append(int(line))
+            else:
+                info.append(line)
         print(info)
 
         # create tuple from list 
